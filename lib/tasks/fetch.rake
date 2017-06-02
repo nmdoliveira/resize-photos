@@ -1,3 +1,3 @@
 task fetch: :environment do
-  Fetcher.new.call
+  PhotoJob.perform_now
 end

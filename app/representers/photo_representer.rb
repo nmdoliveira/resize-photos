@@ -6,15 +6,15 @@ module PhotoRepresenter
   property :large_url
 
   def small_url
-    url "320x240"
+    url ENV["SMALL_SIZE"]
   end
 
   def medium_url
-    url "384x288"
+    url ENV["MEDIUM_SIZE"]
   end
 
   def large_url
-    url "640x480"
+    url ENV["LARGE_SIZE"]
   end
 
   def url(size)
