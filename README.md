@@ -34,4 +34,4 @@ And then run the server:
 bundle exec rails s
 ```
 
-The web service will be available at [localhost:3000/photos](localhost:3000/photos).
+The web service will be available at http://localhost:3000/photos.
