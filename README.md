@@ -6,6 +6,8 @@ This app provides a webservice with urls for the images in <url> in 3 different 
 
 ### MongoDB
 
+Please follow the instructions for your operating system here: https://docs.mongodb.com/manual/installation/.
+
 ### Libraries
 
 ```

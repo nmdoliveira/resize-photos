@@ -19,4 +19,4 @@
 
 .byebug_history
 spec/examples.txt
-public/system
+coverage

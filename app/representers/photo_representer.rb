@@ -18,6 +18,6 @@ module PhotoRepresenter
   end
 
   def url(size)
-    image.thumb(size).url
+    photo_url(uid: image_uid, size: size)
   end
 end

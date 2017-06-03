@@ -1,0 +1,5 @@
+{
+  "small_url": "http://test.host/photos/123?size=320x240",
+  "medium_url": "http://test.host/photos/123?size=384x288",
+  "large_url": "http://test.host/photos/123?size=640x480"
+}
