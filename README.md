@@ -16,8 +16,16 @@ bundle install
 
 ## Test
 
+To run the tests:
+
 ```
 bundle exec rspec
+```
+
+To run with coverage and with style checks:
+
+```
+bundle exec rake test
 ```
 
 ## Run
