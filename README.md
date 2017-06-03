@@ -1,6 +1,6 @@
 # Resize Photos
 
-This app provides a webservice with urls for the images in <url> in 3 different sizes each: small (), medium () and large ().
+This app provides a web service with urls for the images in http://54.152.221.29/images.json in 3 different sizes each: small (320x240), medium (384x288) and large (640x480).
 
 ## Install
 
@@ -22,8 +22,16 @@ bundle exec rspec
 
 ## Run
 
+To run the app, first you need to fetch the images with:
+
+```
+bundle exec rake fetch
+```
+
+And then run the server:
+
 ```
 bundle exec rails s
 ```
 
-The webservice will be available at [localhost:3000/photos](localhost:3000/photos).
+The web service will be available at [localhost:3000/photos](localhost:3000/photos).
