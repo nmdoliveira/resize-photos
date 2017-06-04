@@ -19,8 +19,8 @@ RSpec.describe PhotoJob do
     end
 
     it "creates photos" do
-      expect(Photo).to receive(:create).with(image_url: image_url)
-      expect(Photo).to receive(:create).with(image_url: other_image_url)
+      expect(Photo).to receive(:create)
+        .with([{ image_url: image_url }, { image_url: other_image_url }])
 
       subject.perform
     end

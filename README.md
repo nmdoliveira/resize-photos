@@ -30,16 +30,10 @@ bundle exec rake test
 
 ## Run
 
-To run the app, first you need to fetch the images with:
-
-```
-bundle exec rake fetch
-```
-
-And then run the server:
-
 ```
 bundle exec rails s
 ```
 
 The web service will be available at http://localhost:3000/photos.
+
+The photos will be fetched from the remote server in the first time you access that service, so that request will take longer than the following requests.

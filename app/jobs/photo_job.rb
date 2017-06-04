@@ -1,14 +1,14 @@
 class PhotoJob < ActiveJob::Base
   def perform
-    images.each do |image|
-      Photo.create image_url: image["url"]
-    end
+    Photo.create images
   end
 
   private
 
   def images
-    JSON.parse(data)["images"]
+    JSON.parse(data)["images"].map do |image|
+      { image_url: image["url"] }
+    end
   end
 
   def data

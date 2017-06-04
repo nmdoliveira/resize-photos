@@ -20,6 +20,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
 
   config.include FactoryGirl::Syntax::Methods
+  config.include RequestMethods, type: :controller
   config.include RequestMethods, type: :request
   config.include JSONMethods, type: :representer
   config.include StubEnv::Helpers
